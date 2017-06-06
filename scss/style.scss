@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.lite{
+    font-weight: 300;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    #circle1{
+        border-radius: 50%;
+        position: absolute;
+        background: linear-gradient(to right, #cb356b, #bd3f32);
+        height: 600px;
+        width: 600px;
+        top: -380px;
+        left: -40px;
+	}
+    #circle2{
+		height: 300px;
+		width: 300px;
+		border-radius: 50%;
+		position: absolute;
+		background: linear-gradient(to bottom, #56ccf2, #2f80ed);
+		bottom: -110px;
+		right: -60px;
+	}
+    #contact-btn{
+        height: 40px;
+        width: 160px;
+        position: absolute;
+        font-size: 18px;
+        right: 0;
+        margin: 20px 40px;
+        background: #56ccf2;
+        color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+
+        &:hover{
+            background: darken(#56ccf2,20%)
+        }
+
+        i{
+            margin-right: 12px;
+        }
+    }
+    #user{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 100px;
+        font-family: 'Oswald', sans-serif;
+        margin-left: 40px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+
+        #desc{
+            text-transform: uppercase;
+            font-size: 60px;
+        }
+        #social{
+            width: 40%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: #000;
+
+                #dribbble:hover{
+                    color: #DD3E7B;
+                }
+                #codepen:hover{
+                    color: #34495e;
+                }
+                #jsfiddle:hover{
+                    color: #1C90F3;
+                }
+                #github:hover{
+                    color: #1abc9c;
+                }
+                #server:hover{
+                    color: #2980b9;
+                }
+            }
+        }
+    }
+}
